@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-bg"></header>
+    <div class="wrapper">
+        <div class="container-header">
+            <h3>Todo</h3>
+            <img src="assets/icon-sun.svg" alt="Todo" class="mode-btn">
+        </div>
+        <div class="container">
+            <div class="input-container">
+                <label for="inputCheckbox" class="checkbox">
+                    <img src="assets/icon-check.svg" alt="Check" class="check">
+                    <input type="checkbox" id="inputCheckbox">
+                </label>
+                <input type="text" class="input" placeholder="Create a new todo...">
+            </div>
+            <div class="todo-list">
+             
+            </div>
+
+            <div class="todo-footer">
+                <p><span id="listLenght">0</span> items left</p>
+                <div class="filter">
+                    <button id="unFilter" class="filter-btn footer-active">All</button>
+                    <button id="activeFilter" class="filter-btn">Active</button>
+                    <button id="completedFilter" class="filter-btn">Completed</button>
+                </div>
+                <button id="clearCompleted" class="clear-completed">Clear Completed</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" ></script>
+</body>
+
+</html>
